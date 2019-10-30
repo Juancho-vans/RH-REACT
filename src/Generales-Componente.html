@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)file:///home/juan_ubuntu/Documentos/REACT/reactrh/Componentes%20pra%20ubuntu/CompGenerales.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Generales-Componente</title>
+    <link rel="stylesheet" href="file:///home/juan_ubuntu/Documentos/REACT/reactrh/Componentes%20pra%20ubuntu/CSS/CompGenerales.css">
+</head>
+<body class="body-claro">
+  <div class="flx">
+    <nav>   <!-- header -->
+      <div>
+        <div class="columnas">
+          <img src="file:///home/juan_ubuntu/Documentos/REACT/reactrh/Componentes%20pra%20ubuntu/IMS/quali.svg" alt="logo">
+          <img src="file:///home/juan_ubuntu/Documentos/REACT/reactrh/Componentes%20pra%20ubuntu/IMS/arteDiseno.svg" alt="logo">
+        </div>
+        <img src="file:///home/juan_ubuntu/Documentos/REACT/reactrh/Componentes%20pra%20ubuntu/IMS/colibri.svg" alt="logo">
+      </div>
+      <div>  <!-- links de navegacion -->
+        <a href="file:///home/juan_ubuntu/Documentos/REACT/reactrh/Componentes%20pra%20ubuntu/CompGenerales.html#">Generales</a>
+        <a href="file:///home/juan_ubuntu/Documentos/REACT/reactrh/Componentes%20pra%20ubuntu/CompGenerales.html#">Reportes</a>
+      </div>
+    </nav>
+        
+    <div class="flx_row">   <!-- panel central -->
+
+      <div class="datos">   <!-- ++++++++++++++  Generales ++++++++++++++-->
+          <div class="generico_centrado">
+            <!-- <h3>Datos generales del colaborador</h3> -->
+              <div class="foto">
+                <img src="file:///home/juan_ubuntu/Documentos/REACT/reactrh/Componentes%20pra%20ubuntu/ims/jc.jpg" alt="colaborador" width="100%">
+            </div>
+          </div>
+          
+          <label for="lbl_nombres">Nombre:</label>
+          <input type="text" id="txt_nombres" size="20" value="Juan Carlos" disabled="">
+
+          <label for="lbl_apellidos">Apellidos:</label>
+          <input type="text" id="txt_apellidos" size="20" value="Castillo López" disabled="">
+          
+          <label for="lbl_area">Area:</label>
+          <input type="text" id="txt_area" size="20" value="Recursos Humanos" disabled="">
+
+          <label for="lbl_depto">Depto:</label>
+          <input type="text" id="txt_depto" size="20" value="Beneficios" disabled="">
+
+          <label for="lbl_Genero">Genero:</label>
+          <input type="text" id="txt_Genero" size="20" value="Masculino" disabled="">
+          
+          <label for="lbl_Edad">Edad:</label>
+          <input type="text" id="txt_Edad" size="20" value="37 años" disabled="">
+      </div>
+    
+      <div class="solicitudes"> <!-- ++++++++ prestamo ++++++++-->
+        <h4>Préstamo</h4>
+        Monto:
+        <select class="borde_redondo" name="monto" width="100px">
+          <option value="1">$1,000</option>
+          <option value="2">$2,000</option>
+          <option value="3">$3,000</option>
+          <option value="4">$4,000</option>
+          <option value="5">$5,000</option>
+          <option value="6">$6,000</option>
+        </select>
+        <br>
+        Plazo:
+        <select class="borde_redondo" name="monto" width="100px">
+          <option value="3">3 meses</option>
+          <option value="6000">6 meses</option>
+          <option value="9000">9 meses</option>
+          <option value="12000">12 meses</option>
+        </select>
+        <br>
+        <input type="button" class="boton_quali_obscuro" value="Solicitar Prestamo">
+      </div>
+      
+      <div class="solicitudes"> <!-- ++++++++ aumento ++++++++-->
+        <h4>Aumento</h4>
+        Eval. previa:
+        <select class="borde_redondo" name="evaluación" width="100px">
+          <option value="1">-C-</option>
+          <option value="2">-B-</option>
+          <option value="3">-A-</option>
+          <option value="4">-S-</option>
+        </select> <br>
+        Formacion:
+        <input class="borde_redondo" type="button" value="Adjuntar">
+        <br>
+        <input type="button" class="boton_quali_obscuro" value="Solicitar Aumento">
+        </div>
+
+      <div class="solicitudes"> <!-- ++++++++ Formacion ++++++++-->
+        <h4>Formación</h4>
+        Justificación: <textarea class="borde_redondo" rows="3" cols="20"></textarea> <br>
+        Cursos: <br>
+        <select class="borde_redondo" name="cursos">
+          <option value="Aprender_a_aprender">Aprender a aprender</option>
+          <option value="Manejo_de_la_voz">Manejo de la voz</option>
+          <option value="PNL">Prog. neurolinguistica</option>
+          <option value="Comunicacion_efectiva">Comunicacion efectiva</option>
+          <option value="Google_apps">Google Apps</option>
+          <option value="Manejo_de_conflictos">Manejo de conflictos</option>
+          <option value="Motivacion_en_la_organizacion">Motivacion</option>
+          <option value="Manejo_de_objeciones">Manejo de objeciones</option>
+          <option value="Telemarketing">Telemarketing</option>
+        </select>
+        <br>
+        <input type="button" class="boton_quali_obscuro" value="Solicitar Formación">
+      </div>
+      
+      
+
+      <div class="solicitudes"> <!-- ++++++++ vacaciones ++++++++-->
+        <h4>Vacaciones</h4>
+        F inicial: <br> <input class="borde_redondo" type="date" name="dt_FechIni" size="5"><br>
+        F Final: <br> <input class="borde_redondo" type="date" name="dt_FechFin" size="5"><br>
+        dias disponibles:
+        <input class="borde_redondo" type="text" id="txt_dias" size="1" value="10" disabled=""> 
+          <br>
+        <input type="button" class="boton_quali_obscuro" value="Solicitar Vacaciones">
+      </div>
+
+      <div class="solicitudes"> <!-- ++++++++ Incapacidad ++++++++-->
+        <h4>Incapacidad</h4>
+        Motivo: <textarea class="borde_redondo" rows="3" cols="20"></textarea> <br>
+        F inicial: <input class="borde_redondo" type="date" name="dt_FechIni" size="5"> <br>
+        F Final: <input class="borde_redondo" type="date" name="dt_FechFin" size="5"> <br>
+        <input type="button" class="boton_quali_obscuro" value="Solicitar Incapacidad">  
+      </div>
+
+    </div>
+    
+    <div class="footer">  <!-- footer -->
+      <div class="inner_footer">
+        quali_art@hotmail.com <br>
+        av. tulipanes 127 <br>
+        los tulipanes, mineral de la reforma
+      </div>
+      <div class="inner_footer">
+        whatsapp <br>
+        771 - 134 - 97 - 80
+      </div>
+    </div>
+
+
+</div></body></html>

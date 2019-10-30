@@ -1,0 +1,45 @@
+.SolGde {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 350px;
+    background-color: #F8C300;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.SolMed {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 280px;
+    height: 470px;
+    background-color: #F8C300;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.SolChi {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 230px;
+    height:330px;
+    background-color: #F8C300;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}

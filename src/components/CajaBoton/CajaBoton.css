@@ -1,0 +1,8 @@
+.Boton {
+   border-radius: 10px;
+   font-size: 13px;
+   width: 100px;
+   cursor: pointer;
+   font-family:"TheklaExtended";
+   margin-bottom: 8px;
+}
