@@ -20,7 +20,7 @@ class Header extends React.Component {
                {this.props.estado.logged ? 
                <>
                   <Link to='/Generales'>Generales</Link>
-                  <Link to='/Reportes'>Reportes</Link> 
+                  <Link to='/Reportes/1'>Reportes</Link> 
                </>: 
                   <Link to='/Login'>Login</Link>
                }

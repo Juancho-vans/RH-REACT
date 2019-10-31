@@ -5,21 +5,30 @@ import Imagen from '../Imagen/imagen.js'
 import CajaEtiqueta from '../CajaEtiqueta/CajaEtiqueta'
 import Titulo from '../Titulo/Titulo'
 import Boton from '../Boton/Boton'
+import Plot from 'react-plotly.js';
 
 
 class Contenedor extends React.Component {
 
    constructor(props){
       super(props);
-      this.state = {empleado:"NULL"}
+      this.state = {empleado:"NULL",datos_grafico:null}
    }
 
    componentDidMount = async () =>{
-      let response = await fetch("http://127.0.0.1:8000/empleado/2/",
+       console.log(this.props)
+      let response = await fetch("http://127.0.0.1:8000/empleado/" + this.props.match.params.userid + "/",
                      {headers:{'Content-Type':'application/json'} ,
                      mode:"cors"}
                      )
-      this.setState (({empleado:await response.json()}))
+
+      let graphic_response = await fetch("http://127.0.0.1:8000/prodempleado/" + this.props.match.params.userid,
+                    {headers:{'Content-Type':'application/json'} ,
+                    mode:"cors"}
+                    )
+        this.setState ((
+            {empleado:await response.json(),datos_grafico:await graphic_response.json()}
+            ))
    }
 
    render () {
@@ -56,7 +65,18 @@ class Contenedor extends React.Component {
                 <Boton texto="Editar"/>
             </Solicitud> 
 
-            
+            <div>
+                { this.state.datos_grafico ? 
+                    <Plot data = {[
+                        {
+                            x:this.state.datos_grafico.fechas,
+                            y:this.state.datos_grafico.cantidades,
+                            type:"scatter"
+                        }
+                    ]}>
+                    </Plot> : null
+                }
+            </div>
            
          </div>
       )

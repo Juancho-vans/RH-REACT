@@ -22,7 +22,7 @@ class App extends React.Component {
                {/* <Route exact path ="/Generales" component={Contenedor} /> */}
                <Route path='/Login' render={() => <Inicial funcion={this.Logger} />}/>
                <Route path='/Generales' component={Contenedor}/>
-               <Route path='/Reportes' component={Grafica}/>   
+               <Route path='/Reportes/:userid' component={Grafica}/>   
             </Switch>
             {/* <Contenedor>
             </Contenedor>         */}
