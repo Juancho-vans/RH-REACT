@@ -26,8 +26,10 @@ class App extends React.Component {
             </Switch>
             {/* <Contenedor>
             </Contenedor>         */}
+            <Inicial funcion={this.Logger} />
             <Footer/>
          </Router>
+         
          {/* esta es la sintaxis para ccomunicar componentes en este caso comunicamos APP con INICIAL <Inicial variable='true' estado = {this.state} funcion={this.Logger} /> */}
          </>
       )

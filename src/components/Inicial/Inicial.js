@@ -18,7 +18,7 @@ class Inicial extends React.Component {
                         usuario: <input type="text" name="USR" id=""></input>
                      </div>
                      <div>
-                        password: <input type="text" name="USR" id=""></input>
+                        password: <input type="password" name="USR" id=""></input>
                      </div>
                      {/* <input type='button' value = "ingresar" onClick={this.props.funcion}></input> */}
 
