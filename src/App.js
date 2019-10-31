@@ -25,8 +25,7 @@ class App extends React.Component {
                <Route path='/Reportes/:userid' component={Grafica}/>   
             </Switch>
             {/* <Contenedor>
-            </Contenedor>         */}
-            <Inicial funcion={this.Logger} />
+            </Contenedor>         */}          
             <Footer/>
          </Router>
          
